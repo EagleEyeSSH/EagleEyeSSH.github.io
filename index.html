@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A portfolio of business intelligence projects and case studies.">
+<title>EagleEyeSSH · BI Portfolio</title>
+<style>
+:root{color-scheme:dark;--bg:#10161e;--surface:#17222d;--line:#344452;--text:#f4f7f8;--muted:#b5c5ce;--accent:#a9e987;--ink:#162119}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,sans-serif}a{color:var(--accent);text-underline-offset:.22em}a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:5px}header,main,footer{width:min(1100px,calc(100% - 2.5rem));margin:auto}header{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.35rem 0;border-bottom:1px solid var(--line)}.brand{color:var(--text);font-weight:750;text-decoration:none}.mark{display:inline-grid;place-items:center;background:var(--accent);color:var(--ink);width:2rem;height:2rem;margin-right:.6rem;border-radius:.42rem}nav{display:flex;gap:1.2rem}nav a{color:var(--muted);text-decoration:none;font-size:.9rem}.hero{padding:clamp(3.5rem,9vw,7rem) 0 clamp(3rem,6vw,5rem)}.eyebrow{font-size:.76rem;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);font-weight:800;margin:0 0 .8rem}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(2.8rem,7vw,6rem);letter-spacing:-.065em;line-height:1;max-width:12ch;margin-bottom:1.45rem}h1 span{color:var(--accent)}.intro{color:var(--muted);font-size:1.1rem;max-width:52ch;margin-bottom:1.6rem}.button{display:inline-block;background:var(--accent);color:var(--ink);font-weight:750;padding:.65rem 1rem;border-radius:.45rem;text-decoration:none}.section-head{border-top:1px solid var(--line);padding-top:1.5rem;margin-bottom:1.25rem}h2{font-size:clamp(1.75rem,4vw,2.8rem);letter-spacing:-.045em;line-height:1.1;margin-bottom:.55rem}.section-head p:last-child{color:var(--muted);margin-bottom:0}.case{border:1px solid var(--line);border-radius:1rem;background:var(--surface);overflow:hidden}.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:clamp(1.25rem,4vw,2.5rem);align-items:center}.badge{display:inline-block;border:1px solid var(--line);border-radius:2rem;padding:.2rem .65rem;color:var(--muted);font-size:.75rem;font-weight:700}.case h3{font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.15;letter-spacing:-.035em;margin:.85rem 0 .6rem}.case p{color:var(--muted)}.tags{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0}.tags li{background:#253541;padding:.2rem .6rem;border-radius:.35rem;font-size:.78rem}.viz{background:#111b24;border:1px solid var(--line);border-radius:.65rem;padding:1rem;margin:0}.case details{border-top:1px solid var(--line);padding:1rem clamp(1.25rem,4vw,2.5rem)}summary{cursor:pointer;color:var(--accent);font-weight:700}.story{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:1.2rem}.story p{font-size:.95rem;margin-bottom:.6rem}.story h4{margin:0 0 .35rem}.stack{margin:3.75rem 0}.stack p{max-width:65ch;color:var(--muted)}footer{padding:1.25rem 0 2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem} [hidden]{display:none!important}
+@media(max-width:700px){.case-grid,.story{grid-template-columns:1fr}.case-grid{gap:1.3rem}.story{gap:.65rem}}@media(max-width:360px){header{align-items:flex-start;flex-direction:column}}
+.empty{padding:clamp(1.25rem,4vw,2.5rem)}.empty p:last-child{margin-bottom:0}#project-list{display:grid;gap:1rem}.case-grid:has(figure[hidden]){grid-template-columns:1fr}.viz img{display:block;width:100%;height:auto;border-radius:.35rem}.project-links{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin-top:1rem}nav{flex-wrap:wrap;gap:.45rem 1rem}@media(max-width:480px){header{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body id="top">
+<header>
+<a class="brand" href="#top"><span class="mark" aria-hidden="true">BI</span><span id="owner">EagleEyeSSH</span></a>
+<nav aria-label="Main navigation"><a href="#work">Projects</a><a href="#approach">Approach</a><a href="https://github.com/EagleEyeSSH">GitHub</a></nav>
+</header>
+<main>
+<section class="hero" aria-labelledby="title">
+<p class="eyebrow">Business intelligence portfolio</p>
+<h1 id="title">From raw data to <span>better decisions.</span></h1>
+<p class="intro">A portfolio of Power BI reports and the business questions behind them.</p>
+<a class="button" href="#work">Explore projects ↓</a>
+</section>
+<section id="work" aria-labelledby="work-title">
+<div class="section-head"><p class="eyebrow">01 / Case studies</p><h2 id="work-title">Selected projects</h2></div>
+<div class="case empty" id="empty-projects">
+<span class="badge">Portfolio in progress</span>
+<h3>Project write-ups are on the way.</h3>
+<p>Published case studies will include report previews and a short explanation of the analysis.</p>
+</div>
+<div id="project-list"></div>
+</section>
+<section class="stack" id="approach" aria-labelledby="approach-title">
+<div class="section-head"><p class="eyebrow">02 / Method</p><h2 id="approach-title">How to read the work</h2></div>
+<p>Each case study starts with a decision, explains how the data and measures support it, then shows a finding and a practical next step.</p>
+</section>
+</main>
+<footer>EagleEyeSSH · Business Intelligence Portfolio</footer>
+<template id="project-template">
+<article class="case">
+<div class="case-grid">
+<div>
+<h3 data-field="title"></h3>
+<p data-field="summary"></p>
+<ul class="tags" aria-label="Tools and techniques"></ul>
+<div class="project-links" hidden>
+<a class="report-link" hidden>Open interactive Power BI report ↗</a>
+<a class="source-link" hidden>View project files ↗</a>
+</div>
+</div>
+<figure class="viz" hidden><img loading="lazy" alt=""></figure>
+</div>
+<details>
+<summary>Read the case study</summary>
+<div class="story">
+<div><h4>Business question</h4><p data-field="question"></p></div>
+<div><h4>Approach</h4><p data-field="approach"></p></div>
+<div><h4>Finding</h4><p data-field="finding"></p></div>
+</div>
+</details>
+</article>
+</template>
+<script id="project-data" type="application/json">
+[]
+</script>
+<script>
+const projects = JSON.parse(document.querySelector('#project-data').textContent);
+const list = document.querySelector('#project-list');
+const template = document.querySelector('#project-template');
+
+function projectUrl(value, isReport = false) {
+  if (!value) return null;
+  try {
+    const url = new URL(value, window.location.href);
+    if (isReport) {
+      return url.protocol === 'https:' && url.hostname === 'app.powerbi.com' &&
+        url.pathname === '/view' && url.searchParams.get('r') ? url.href : null;
+    }
+    const localPreview = value.startsWith('./') && url.protocol === 'file:';
+    return url.protocol === 'https:' || localPreview ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
+for (const project of projects) {
+  const card = template.content.cloneNode(true);
+  for (const field of ['title', 'summary', 'question', 'approach', 'finding']) {
+    card.querySelector('[data-field="' + field + '"]').textContent = project[field] || '';
+  }
+  for (const tool of project.tools || []) {
+    const tag = document.createElement('li');
+    tag.textContent = tool;
+    card.querySelector('.tags').append(tag);
+  }
+  const screenshot = projectUrl(project.screenshot);
+  if (screenshot) {
+    const image = card.querySelector('img');
+    image.src = screenshot;
+    image.alt = project.screenshotAlt || project.title;
+    image.parentElement.hidden = false;
+  }
+  const report = projectUrl(project.powerBiUrl, true);
+  const source = projectUrl(project.sourceUrl);
+  if (report || source) card.querySelector('.project-links').hidden = false;
+  if (report) {
+    const link = card.querySelector('.report-link');
+    link.href = report;
+    link.hidden = false;
+  }
+  if (source) {
+    const link = card.querySelector('.source-link');
+    link.href = source;
+    link.hidden = false;
+  }
+  list.append(card);
+}
+if (list.childElementCount) document.querySelector('#empty-projects').hidden = true;
+</script>
+</body>
+</html>
